@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/javascripts/event.js" type="text/javascript"></script>
+    <title>Employee Data</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Filter The Data</h1>
+        <form action="/filter" class="search" method="post">
+        <div class="filter">
+            <label for="name"> By Name:
+                <input type="text" name="name" placeholder="Enter Name">
+            </label>
+        </div>
+        <div class="filter">
+         <label for="email"> By Email Id:
+             <input type="email" name="email" placeholder="Enter Email Id">
+         </label>
+     </div>
+     <div class="filter">
+         <label for="phone"> By Phone No.:
+             <input type="tel" name="phone" placeholder="Enter Phone No.">
+         </label>
+     </div>
+     <div class="filter btn">
+         <button type="submit">filter</button>
+     </div>
+     </form>
+        <h1>Employee_Data </h1>
+        <table>
+            <tr class="heading">
+
+                <td class="name">Name</td>
+                <td class="address">Address</td>
+                <td class="phone">Phone</td>
+                <td class="email">Email_id</td>
+                <td class="image">Image</td>
+                <td class="action" >Action</td>
+            </tr>
+            <% if(records.length>0){%>
+            <% records.forEach((row)=>{%>
+            <tr>
+                <td class="name"><%= row.name %></td>
+                <td class="address"><%= row.address %></td>
+                <td class="phone"><%= row.phone %></td>
+                <td class="email"><%= row.email_id %></td>
+                <td class="image">
+                    <% if(row.image){ %>
+                        <img src="./uploads/<%= row.image %>" alt="profile image" width="80">
+                      <% } %>
+                </td>
+                <td class="action">
+                    <a href="/edit/<%= row._id%>"><i class="fa fa-pencil-square-o" style="color: blue;" aria-hidden="true"></i></a>
+                    <a href="/delete/<%= row._id%>"> <i class="fa fa-trash-o" style="color: red;" aria-hidden="true"></i></a>
+                </td>
+            </tr>
+            <%}) } else{%>
+            <tr>
+                <td class="name">No records found</td>
+            </tr>
+            <%}%>
+        </table>
+        <form action="/" class="details" method="post" enctype="multipart/form-data">
+            <h2>Employee Details Form</h2>
+            <div class="name empDetails">
+                <label for="name">Name :</label>
+                <input type="text" name="name" placeholder="Enate Name">
+            </div>
+            <div class="address empDetails">
+                <label for="address">Address :</label>
+                <input type="text" name="address" placeholder="Enter Address">
+            </div>
+            <div class="phone empDetails">
+                <label for="phone">Phone No. :</label>
+                <input type="tel" name="phone" placeholder="Enter Phone No.">
+            </div>
+            <div class="email empDetails">
+                <label for="email">Email_ID :</label>
+                <input type="email" name="email" placeholder="Enter Email ID">
+            </div>
+            <div class="image">
+                <label for="image">Add Image :</label>
+                <input type="file" name="file" id="">
+            </div>
+            <div class="btn">
+                <button type="submit">Add Data</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Employee Data</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form class="details" action="/update" method="post" enctype="multipart/form-data">
+            <h2>Edit Employee Details</h2>
+            <input type="hidden" name="id" value="<%= record._id %>">
+          <div class="name empDetails">
+              <label for="name">Name :</label>
+              <input type="text" name="name" placeholder="Enter Name" value="<%= record.name%>">
+          </div>
+          <div class="address empDetails">
+            <label for="address">Address :</label>
+            <input type="text" name="address" placeholder="Enter Address" value="<%= record.address%>">
+        </div>
+        <div class="phone empDetails">
+            <label for="phone">Phone No. :</label>
+            <input type="tel" name="phone" placeholder="Enter Phone No." value="<%= record.phone%>">
+        </div>
+        <div class="email empDetails">
+            <label for="email">Email_ID :</label>
+            <input type="email" name="email" placeholder="Enter Email ID" value="<%= record.email_id%>">
+        </div>
+        <div class="image">
+            <label for="image">Add Image :</label>
+            <input type="file" name="file" id="" value="<%= record.image%>">
+        </div>
+        <% if(record.image){ %>
+            <img src="/uploads/<%= record.image %>" alt="profile image" width="80">
+          <% } %>
+        <div class="btn">
+           <button type="submit">Add Data</button>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

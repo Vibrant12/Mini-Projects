@@ -1,0 +1,116 @@
+.container{
+  margin: auto;
+}
+table .heading{
+  text-align: center;
+  font-size: 25px;
+}
+table tr td{
+  border: 1px solid blue;
+  
+  word-wrap: break-word;
+}
+table tr .name{
+  padding: 7px 10px;
+  font-size: 22px;
+  min-width: 270px;
+  max-width: 270px;
+}
+table tr .address{
+  padding: 7px 10px;
+  font-size: 22px;
+  min-width: 385px;
+  max-width: 385px;
+}
+table tr .phone{
+  padding: 7px 10px;
+  font-size: 22px;
+  min-width: 200px;
+  max-width: 200px;
+}
+table tr .email{
+  padding: 7px 10px;
+  font-size: 22px;
+  min-width: 300px;
+  max-width: 300px;
+}
+table tr .image{
+  padding: 7px 10px;
+  font-size: 22px;
+  text-align: center;
+  min-width: 200px;
+  max-width: 200px;
+}
+table tr .action{
+  text-align: center;
+  font-size: 25px;
+}
+
+.details{
+  border: 1.5px solid green ;
+  margin: 10px auto ;
+  width: 433px;
+  padding: 10px 10px;
+  border-radius: 13px;
+}
+.empDetails{
+  display: inline;
+}
+form label{
+  font-size: 22px;
+}
+.details input{
+  width: 275px;
+  height: 31px;
+  font-size: 18px;
+  text-align: left;
+  padding: 6px 5px;
+  margin: 10px 10px;
+  border-radius: 7px;
+}
+form .name input{
+  position: relative;
+  left: 34px;
+}
+form .address input{
+  position: relative;
+  left: 15px;
+
+}
+form .phone input{
+  position: relative;
+  left: -6px;
+}
+form .btn{
+  text-align: center;
+  
+}
+form .btn button{
+  width: 83px;
+  height: 41px;
+  padding: -10px 10px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+button:hover{
+  cursor: pointer;
+  background-color: grey;
+}
+.search{
+  position: relative;
+  width: 103%;
+  padding: 14px 5px;
+  margin: 5px 20px;
+}
+form .filter{
+  display: inline;
+}
+.filter input{
+  width: 250px;
+  height: 31px;
+  font-size: 18px;
+  text-align: left;
+  padding: 6px 5px;
+  margin: 10px 10px;
+  border-radius: 7px;
+}
