@@ -1,2 +1,2 @@
 # Mini-Projects
-This is for learning purpose
+This is only for learning purpose
