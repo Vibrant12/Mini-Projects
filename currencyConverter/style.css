@@ -1,0 +1,50 @@
+h1{
+    position: relative;
+    left: 38%;
+    top: 64px;
+}
+.card{
+    margin: 83px 211px;
+    position: relative;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(100, 207, 240);
+}
+input{
+    height: 38px;
+    width: 298px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    text-align: right;
+    font-size: 35px;
+    border-radius: 10px;
+}
+button{
+    position: relative;
+    right: -42%;
+    width: 69px;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(152, 152, 248);
+    font-size: 22px;
+}
+select{
+    height: 60px;
+    width: 304px;
+    margin: 12px 13px;
+    padding: 9px 12px;
+    text-align: right;
+    font-size: 29px;
+    border-radius: 10px;
+}
+.choose_1,.choose_2{
+    font-size: 48px;
+    margin: 14px 8px;
+}
