@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    
+    background-color: rgb(185, 185, 241);
+}
+h1{
+    text-align: center;
+}
+
+.total-cases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.total-confirm,.total-active,.total-recover,.total-deceased{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border: 1px solid red;
+    width: 153px;
+    height: 101px;
+    background-color: rgb(124, 123, 123);
+    color: white;
+    font-size: 25px;
+}
+.total-confirm p,.total-active p,.total-recover p,.total-deceased p{
+    position: relative;
+    top: 10px;
+}
+
+.table{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    /* width: 10px; */
+}
+.total-state-wise-cases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    /* border: 1px solid lightblue; */
+    padding: -4px -5px;
+    margin: -20px 295px;
+}
+.state-name,.total-state-wise-confirm,.total-state-wise-active,.total-state-wise-recover,.total-state-wise-deceased{
+    margin: 0px 0px;
+    padding: 11px 1px;
+    
+   
+}
+
+button{
+    margin: 0px 0px;
+    padding: 5px 5px;
+    border: 1px solid red;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+    width: 150px;
+    word-wrap: break-word;
+    min-height: 66px;
+    display: table;
+}
+
+/* .total-state-wise-cases{
+   
+   min-height: 68px;
+} */
+
+.andaman{
+    min-height: 89px;
+}
+.dadra{
+    min-height: 114px;
+}
