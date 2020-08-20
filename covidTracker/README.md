@@ -1,4 +1,4 @@
-#COVID-19 Tracker
+# COVID-19 Tracker
 
 In this pandemic situation, we are always curious to know about the most and less affected area by **COVID-19** virus.
 
